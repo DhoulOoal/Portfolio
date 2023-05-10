@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/home/home.css">
+    <!--autre lien pour les îcones https://cdnjs.com/libraries/font-awesome-->
+    <script src="https://kit.fontawesome.com/4f6d94b9cb.js" crossorigin="anonymous"></script>
+
+    <title>Ludovic Lachal - Welcome to my Portfolio</title>
+</head>
+
+
+<body>
+    <section class="hero">
+        <div class="main-width">
+            <header>
+                <div class="logo" href="/home/home.html">
+                    <!--<i class="fa-solid fa-brain"></i>-->
+                    <i class="fa-solid fa-l fa-beat-fade" style="color: #eeeeee;"></i>
+                </div>
+
+                <nav>
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <ul class="nav-list">
+                        <li class="li-btn active"><a href="/home/home.html">{ Home }</a></li>
+                        <li class="li-btn"><a href="/about/about.html">{ About me }</a></li>
+                        <!--<li><a href="">Services</a></li>--><!--to add when I do freelance-->
+                        <li class="li-btn"><a href="/works/works.html">{ Works }</a></li>
+                        <li class="li-contact-btn"><a href="/contact/contact.html">Get in touch</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="container">
+                <div class="hero-text">
+                    <h3>Hi there !<br>My name is <span id="first">Ludovic Lachal</span></h3>
+                    <h1>I am <span class="input"></span></h1>
+                    <p>A Frontend focused Web Developer building the Frontend 
+                        of Websites and Web Applications that leads to the success of the overall product.</p>
+                    <div class="socials">
+                        <!--<a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>-->
+                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/DhoulOoal?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    
+                    <div class="wrapper">
+                        <a class="me-button" href="/about/about.html">More about me</a>
+                    </div>
+                    <svg style="position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                        <defs>
+                            <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>    
+                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"/>
+                                <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                            </filter>
+                        </defs>
+                    </svg>
+                    <!--<button type="button">More about me</button> LE VRAI BOUTON-->
+                </div>
+
+                <div class="footer">
+                    <p>© Copyright 2022 / Made by Lachal Ludovic</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Animation Type Script-->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let typed = new Typed(".input", {
+            strings:["a Front-End Developer", "25 years old", "French"],
+            typeSpeed: 95,
+            backSpeed: 96,
+            loop:true
+        });
+    </script>
+    <script src="/burger.js"></script>
+</body>
+</html>
